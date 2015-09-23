@@ -2,8 +2,9 @@
 
     {{#if currentUser}}
         <form id="message-input" action="">
-            <div class="ui fluid action input">
+            <div class="ui fluid icon action input">
                 <input name="message" type="text" placeholder="Type your message!"/>
+                <i id="take-picture" class="ui link circular photo icon"></i>
                 <button class="ui button" type="submit">Send</button>
             </div>
         </form>
@@ -13,4 +14,6 @@
         </div>
     {{/if}}
 
+    <canvas id="camera"></canvas>
+    
 </template>
