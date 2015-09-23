@@ -1,0 +1,30 @@
+<template name="messagesList">
+
+    <div id="messages" class="ui comments">
+
+        {{#each messages}}
+
+            {{>message}}
+
+        {{/each}}
+
+    </div>
+
+</template>
+
+<template name="message">
+
+    <div class="ui comment">
+        <div class="content">
+            <span class="author">{{author}}</span>
+
+            <div class="metadata">
+                <span class="date">{{createdAt}}</span>
+            </div>
+            <div class="text">
+                {{body}}
+            </div>
+        </div>
+    </div>
+
+</template>
