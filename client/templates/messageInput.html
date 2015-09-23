@@ -1,10 +1,16 @@
 <template name="messageInput">
 
-    <form id="message-input" action="">
-        <div class="ui fluid action input">
-            <input name="message" type="text" placeholder="Type your message!"/>
-            <button class="ui button" type="submit">Send</button>
+    {{#if currentUser}}
+        <form id="message-input" action="">
+            <div class="ui fluid action input">
+                <input name="message" type="text" placeholder="Type your message!"/>
+                <button class="ui button" type="submit">Send</button>
+            </div>
+        </form>
+    {{else}}
+        <div id="login-welcome" class="ui center aligned blue inverted segment">
+            Please sign in to join the fun!
         </div>
-    </form>
+    {{/if}}
 
 </template>

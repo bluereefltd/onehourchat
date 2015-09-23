@@ -8,7 +8,7 @@ Template.messageInput.events({
 
         Messages.insert({
             createdAt: new Date(),
-            author: 'Julien',
+            author: Meteor.user().username,
             body: messageInput.value
         });
 
@@ -16,6 +16,10 @@ Template.messageInput.events({
 
         scrollToBottom();
 
+    },
+
+    'click #login-welcome': function () {
+        $("#login-sign-in-link").click();
     }
 
 });

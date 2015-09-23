@@ -21,3 +21,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 bluereef:camera
 less
 semantic:ui-css
+accounts-password
+accounts-ui
