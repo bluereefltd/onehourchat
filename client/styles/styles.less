@@ -1,0 +1,66 @@
+html, body {
+  max-height: 100%;
+}
+
+.inverted.wrapper {
+  background-color: #1b1c1d;
+}
+
+.main.container {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+}
+
+.menu .ui.container {
+  @media (max-width: 766px) {
+    width: 100% !important;
+  }
+}
+
+#message-input {
+  min-height: 2.5em;
+  margin-bottom: 1em;
+}
+
+#login-welcome {
+  min-height: 3.5em;
+  cursor: pointer;
+}
+
+#messages {
+  margin-top: 3.3em;
+  overflow: auto;
+  max-width: 100%;
+}
+
+.own.comment {
+  text-align: right;
+}
+
+#login-buttons {
+  border: none;
+}
+
+#login-dropdown-list {
+  right: 0;
+  left: initial;
+}
+
+#take-picture {
+  right: 6em;
+  cursor: pointer;
+}
+
+#camera {
+  display: none;
+}
+
+.camera-popup {
+  position: absolute;
+  top: 30px;
+}
+
+.camera-popup .photo-preview {
+  width: 100%;
+}
