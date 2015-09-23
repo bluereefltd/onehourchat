@@ -14,12 +14,12 @@
 
 <template name="message">
 
-    <div class="ui comment">
+    <div class="{{ownCommentClass}} ui comment">
         <div class="content">
             <span class="author">{{author}}</span>
 
             <div class="metadata">
-                <span class="date">{{createdAt}}</span>
+                <span class="date">{{formattedDate}}</span>
             </div>
             <div class="text">
                 {{body}}
