@@ -6,3 +6,9 @@ Template.messagesList.helpers({
     }
 
 });
+
+Template.message.onRendered(function() {
+
+    scrollToBottom();
+
+});
