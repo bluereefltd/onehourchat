@@ -45,11 +45,13 @@ Template.messageInput.events({
 
         MeteorCamera.getPicture({correctOrientation: true}, function (error, data) {
 
-            Messages.insert({
-                createdAt: new Date(),
-                author: Meteor.user().username,
-                picture: resizeImage(data)
-            })
+            if (!error) {
+                Messages.insert({
+                    createdAt: new Date(),
+                    author: Meteor.user().username,
+                    picture: resizeImage(data)
+                });
+            }
 
             Session.set("autoScroll", true);
 
