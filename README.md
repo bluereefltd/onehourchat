@@ -1,10 +1,13 @@
 # The one-hour Meteor chat
 This is a tutorial to build a simple chat application in less than 60 minutes using Meteor.
 
-This demo application is voluntarily focused on mobile and includes:
+This tutorial application is voluntarily focused on mobile and includes:
 - user login with username
 - instant message updates
 - send pictures to chat with phone camera or laptop webcam
+
+You can see the app live here:
+http://onehourchat.meteor.com
 
 Taking pictures is possible both on desktop and mobile thanks to the mdg:camera package.
 *Note: The package I am actually using is a fork of mdg:camera and fixes a bug so that you can use the camera on a mobile browser as well without Cordova.
