@@ -10,8 +10,10 @@ You can see the app live here:
 http://onehourchat.meteor.com
 
 Taking pictures is possible both on desktop and mobile thanks to the mdg:camera package.
-*Note: The package I am actually using is a fork of mdg:camera and fixes a bug so that you can use the camera on a mobile browser as well without Cordova.
-(there is a permission issue in the original package).*
+*Notes:
+- The package I am actually using is a fork of mdg:camera and fixes a bug so that you can use the camera on a mobile browser as well without Cordova.
+(there is a permission issue in the original package).
+- When you check out step-9, there is a fix for step-6 -> There should have been a check on error when the MeteorCamera.getPicture callback is fired.*
 
 ## Downloading the code and start following the tutorial
 
